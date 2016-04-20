@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50202DF31CC2727200F41D27 /* HKUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50202DF21CC2727200F41D27 /* HKUserInfo.swift */; };
+		50202DF71CC276C300F41D27 /* HKDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50202DF61CC276C300F41D27 /* HKDemo.swift */; };
+		508D3C091CC29FF000EC14B3 /* HKWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D3C081CC29FF000EC14B3 /* HKWindowController.swift */; };
 		50B1073E1CBFD526004DD036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1073D1CBFD526004DD036 /* AppDelegate.swift */; };
 		50B107401CBFD526004DD036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1073F1CBFD526004DD036 /* ViewController.swift */; };
 		50B107421CBFD526004DD036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B107411CBFD526004DD036 /* Assets.xcassets */; };
 		50B107451CBFD526004DD036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B107431CBFD526004DD036 /* Main.storyboard */; };
+		50D4E3471CC0975C00EA2994 /* HKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4E3461CC0975C00EA2994 /* HKMainViewController.swift */; };
+		50D4E3491CC09C5300EA2994 /* NSNumber+HKExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4E3481CC09C5300EA2994 /* NSNumber+HKExts.swift */; };
+		50D4E34B1CC09C6A00EA2994 /* HBCBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4E34A1CC09C6A00EA2994 /* HBCBaseModel.swift */; };
+		50DDA2791CC71BED0034D40E /* NSDictionary+HKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DDA2781CC71BED0034D40E /* NSDictionary+HKExtension.swift */; };
+		50E992161CC1DB44002DCDA3 /* HBCFeedItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E992151CC1DB44002DCDA3 /* HBCFeedItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50202DF21CC2727200F41D27 /* HKUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKUserInfo.swift; sourceTree = "<group>"; };
+		50202DF61CC276C300F41D27 /* HKDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDemo.swift; sourceTree = "<group>"; };
+		508D3C081CC29FF000EC14B3 /* HKWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKWindowController.swift; sourceTree = "<group>"; };
 		50B1073A1CBFD526004DD036 /* Json2SwiftModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Json2SwiftModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B1073D1CBFD526004DD036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B1073F1CBFD526004DD036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50B107411CBFD526004DD036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B107441CBFD526004DD036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50B107461CBFD526004DD036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D4E3461CC0975C00EA2994 /* HKMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKMainViewController.swift; sourceTree = "<group>"; };
+		50D4E3481CC09C5300EA2994 /* NSNumber+HKExts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+HKExts.swift"; sourceTree = "<group>"; };
+		50D4E34A1CC09C6A00EA2994 /* HBCBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBCBaseModel.swift; sourceTree = "<group>"; };
+		50DDA2781CC71BED0034D40E /* NSDictionary+HKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+HKExtension.swift"; sourceTree = "<group>"; };
+		50E992151CC1DB44002DCDA3 /* HBCFeedItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBCFeedItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,14 @@
 				50B107411CBFD526004DD036 /* Assets.xcassets */,
 				50B107431CBFD526004DD036 /* Main.storyboard */,
 				50B107461CBFD526004DD036 /* Info.plist */,
+				50D4E34A1CC09C6A00EA2994 /* HBCBaseModel.swift */,
+				50D4E3481CC09C5300EA2994 /* NSNumber+HKExts.swift */,
+				50D4E3461CC0975C00EA2994 /* HKMainViewController.swift */,
+				50E992151CC1DB44002DCDA3 /* HBCFeedItemModel.swift */,
+				50202DF21CC2727200F41D27 /* HKUserInfo.swift */,
+				50202DF61CC276C300F41D27 /* HKDemo.swift */,
+				508D3C081CC29FF000EC14B3 /* HKWindowController.swift */,
+				50DDA2781CC71BED0034D40E /* NSDictionary+HKExtension.swift */,
 			);
 			path = Json2SwiftModel;
 			sourceTree = "<group>";
@@ -131,6 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50202DF31CC2727200F41D27 /* HKUserInfo.swift in Sources */,
+				508D3C091CC29FF000EC14B3 /* HKWindowController.swift in Sources */,
+				50E992161CC1DB44002DCDA3 /* HBCFeedItemModel.swift in Sources */,
+				50D4E3491CC09C5300EA2994 /* NSNumber+HKExts.swift in Sources */,
+				50D4E34B1CC09C6A00EA2994 /* HBCBaseModel.swift in Sources */,
+				50DDA2791CC71BED0034D40E /* NSDictionary+HKExtension.swift in Sources */,
+				50D4E3471CC0975C00EA2994 /* HKMainViewController.swift in Sources */,
+				50202DF71CC276C300F41D27 /* HKDemo.swift in Sources */,
 				50B107401CBFD526004DD036 /* ViewController.swift in Sources */,
 				50B1073E1CBFD526004DD036 /* AppDelegate.swift in Sources */,
 			);
@@ -239,6 +271,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Json2SwiftModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhk.ios.Json2SwiftModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -251,6 +284,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Json2SwiftModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhk.ios.Json2SwiftModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -275,6 +309,7 @@
 				50B1074B1CBFD526004DD036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
