@@ -75,12 +75,12 @@
 				50B107461CBFD526004DD036 /* Info.plist */,
 				50D4E34A1CC09C6A00EA2994 /* HBCBaseModel.swift */,
 				50D4E3481CC09C5300EA2994 /* NSNumber+HKExts.swift */,
+				50DDA2781CC71BED0034D40E /* NSDictionary+HKExtension.swift */,
 				50D4E3461CC0975C00EA2994 /* HKMainViewController.swift */,
 				50E992151CC1DB44002DCDA3 /* HBCFeedItemModel.swift */,
 				50202DF21CC2727200F41D27 /* HKUserInfo.swift */,
 				50202DF61CC276C300F41D27 /* HKDemo.swift */,
 				508D3C081CC29FF000EC14B3 /* HKWindowController.swift */,
-				50DDA2781CC71BED0034D40E /* NSDictionary+HKExtension.swift */,
 			);
 			path = Json2SwiftModel;
 			sourceTree = "<group>";

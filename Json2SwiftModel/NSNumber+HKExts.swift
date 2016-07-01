@@ -37,7 +37,7 @@ extension NSNumber {
     
     internal func isFloat() -> Bool {
         
-        let value = NSNumber(float: 1.11)
+        let value = NSNumber(float: 1.111111)
         let valueCType = String.fromCString(value.objCType)
         let selfCType = String.fromCString(self.objCType)
         

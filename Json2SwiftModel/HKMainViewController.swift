@@ -234,7 +234,7 @@ class HKMainViewController: NSViewController {
             
             if tempValue is String {
 
-                mainModelFile.appendContentsOf("\(tab)\(tab)\(varName) = jsonDic.ext_stringValueForKey(\"\(varName)\")\(rn)\(rn)")
+                mainModelFile.appendContentsOf("\(tab)\(tab)\(varName) = jsonDic.ext_stringValueForKey(\"\(varName)\")\(rn)")
             }else if tempValue is NSNull {
                 
                 mainModelFile.appendContentsOf("\(tab)\(tab)\(varName) = jsonDic.objectForKey(\"\(varName)\")\(rn)\(rn)")
@@ -243,22 +243,22 @@ class HKMainViewController: NSViewController {
                 let number = tempValue as! NSNumber
                 if number.isInt() {
                     
-                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_intValueForKey(\"\(varName)\")\(rn)\(rn)")
+                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_intValueForKey(\"\(varName)\")\(rn)")
                 }else if number.isUInt() {
                     
-                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_uIntValueForKey(\"\(varName)\")\(rn)\(rn)")
+                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_uIntValueForKey(\"\(varName)\")\(rn)")
                 }else if number.isFloat() {
                     
-                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_floatValueForKey(\"\(varName)\")\(rn)\(rn)")
+                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_floatValueForKey(\"\(varName)\")\(rn)")
                 }else if number.isDouble() {
                     
-                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_doubleValueForKey(\"\(varName)\")\(rn)\(rn)")
+                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_doubleValueForKey(\"\(varName)\")\(rn)")
                 }else if number.isTrueBool() || number.isFalseBool() {
                     
-                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_boolValueForKey(\"\(varName)\")\(rn)\(rn)")
+                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(tab)\(varName) = jsonDic.ext_boolValueForKey(\"\(varName)\")\(rn)")
                 }else{
 
-                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.objectForKey(\"\(varName)\")\(rn)\(rn)")
+                    mainModelFile.appendContentsOf("\(tab)\(tab)\(tab)\(varName) = jsonDic.objectForKey(\"\(varName)\")\(rn)")
                 }
                 
             }else if tempValue is NSArray {

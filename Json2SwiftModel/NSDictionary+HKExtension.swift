@@ -8,17 +8,7 @@
 
 import Foundation
 
-/*
- key对应value提取
- String
- Float
- Double
- Int
- Uint
- Bool
- NSArray
- NSDictionary
- */
+//MARK: Get key's correspond value
 extension NSDictionary {
     
     func ext_stringValueForKey(aKey: AnyObject) -> String {
@@ -116,6 +106,8 @@ extension NSDictionary {
         let value = self.objectForKey(aKey)
         guard let realValue = value as? NSDictionary else {
             print("\(value)'s type:\(value.dynamicType) is not NSDictionary type will return an empty dictionary")
+            self.setValue(100, forKey: "")
+            
             
             return NSDictionary()
         }
@@ -128,7 +120,7 @@ extension NSDictionary {
  key对应value类型判断
  */
 
-enum ValueType {
+enum HBCValueType {
     case vt_String
     case vt_Float
     case vt_Double
@@ -138,8 +130,46 @@ enum ValueType {
     case vt_NSArray //OC type
     case vt_NSDictionary //OC type
     case vt_AnyObject
+    case vt_TypeNULL
 }
 
+//MARK: Get key's correspond value's type
 extension NSDictionary {
-    
+    func hbc_valueTypeForKey(key: String) -> HBCValueType {
+        let value = self .valueForKey(key)
+        
+        print(value)
+        
+        guard value != nil else { return .vt_TypeNULL }
+        
+        switch value {
+            
+        case let v where v is String:
+            return .vt_String
+            
+        case let v where v is Float:
+            return .vt_Float
+            
+        case let v where v is Double:
+            return .vt_Double
+            
+        case let v where v is Int:
+            return .vt_Int
+            
+        case let v where v is UInt:
+            return .vt_UInt
+            
+        case let v where v is Bool:
+            return .vt_Bool
+            
+        case let v where v is NSArray:
+            return .vt_NSArray
+            
+        case let v where v is NSDictionary:
+            return .vt_NSDictionary
+            
+        default:
+            return .vt_AnyObject
+        }
+    }
 }
